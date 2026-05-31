@@ -834,28 +834,38 @@
       .tl-duration,
       .cta-tag,
       .cta-from-label {
-        letter-spacing: 0.18em;
-        line-height: 1.5;
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
+        line-height: 1.6;
       }
       .cover-title { font-size: clamp(2.75rem, 16vw, 4.4rem); }
-      .cover-sub { margin-bottom: 36px; }
+      .cover-sub { font-size: 1.16rem; line-height: 1.75; margin-bottom: 36px; }
+      .cover-to-name { font-size: 1.85rem; }
       .cover-to-role,
       .cta-from-detail {
+        font-size: 0.9rem;
         letter-spacing: 0.06em;
-        line-height: 1.6;
+        line-height: 1.7;
         overflow-wrap: anywhere;
       }
       .opp-grid, .sin-layout { grid-template-columns: 1fr; gap: 40px; }
       .opp-insight { padding: 32px 24px; }
       .prop-cards { grid-template-columns: 1fr; }
       .prop-card { padding: 32px 24px; }
-      .prop-card-badge { letter-spacing: 0.18em; line-height: 1.4; }
+      .prop-card h3 { font-size: 1.65rem; }
+      .prop-card p { font-size: 1rem; line-height: 1.75; }
+      .prop-card-badge { font-size: 0.68rem; letter-spacing: 0.12em; line-height: 1.5; }
       .nums-grid { grid-template-columns: 1fr 1fr; }
       .num-box { padding: 32px 18px; }
+      .num-label { font-size: 0.76rem; }
+      .num-note,
+      .nums-disclaimer { font-size: 0.95rem; line-height: 1.75; }
       .cover-accent { display: none; }
       .sin-visual { height: 280px; }
       .sin-point { gap: 14px; }
       .sin-point-icon { width: 34px; height: 34px; }
+      .sin-point h4 { font-size: 1.18rem; }
+      .sin-point p { font-size: 1rem; line-height: 1.75; }
       .mod-table,
       .mod-table thead,
       .mod-table tbody,
@@ -872,6 +882,8 @@
         margin-bottom: 14px;
       }
       .mod-table td {
+        font-size: 1rem;
+        line-height: 1.65;
         border-bottom: 1px solid var(--light);
         padding: 14px 16px;
       }
@@ -879,8 +891,8 @@
       .mod-table td::before {
         color: var(--smoke);
         display: block;
-        font-size: 0.55rem;
-        letter-spacing: 0.18em;
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
         margin-bottom: 6px;
         text-transform: uppercase;
       }
@@ -900,8 +912,13 @@
       .tl-items::before { left: 7px; }
       .tl-item { padding-left: 24px; }
       .tl-dot { left: -22px; }
+      .tl-title { font-size: 1.55rem; }
+      .tl-desc { font-size: 1rem; line-height: 1.75; }
+      .tl-duration { font-size: 0.72rem; letter-spacing: 0.12em; line-height: 1.5; }
       .cta-section { padding: 80px 24px; }
       .cta-title { font-size: clamp(2.35rem, 14vw, 4rem); }
+      .cta-sub { font-size: 1.16rem; line-height: 1.75; }
+      .cta-from-name { font-size: 1.65rem; }
       .cta-sub br { display: none; }
     }
 
@@ -914,7 +931,7 @@
       .section-title { font-size: clamp(2rem, 12vw, 3rem); margin-bottom: 34px; }
       .opp-text p,
       .opp-insight p,
-      .prop-intro { font-size: 1.05rem; }
+      .prop-intro { font-size: 1.14rem; line-height: 1.75; }
       .nums-grid { grid-template-columns: 1fr; }
       .building { width: min(200px, calc(100vw - 80px)); }
       .floor-label { letter-spacing: 0.12em; }
