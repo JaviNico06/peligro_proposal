@@ -813,11 +813,110 @@
     /* ─── RESPONSIVE ─── */
     @media (max-width: 768px) {
       .section { padding: 60px 24px; }
+      .cover { min-height: 92vh; }
+      .cover-header,
+      .cover-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+      }
       .cover-header, .cover-body, .cover-footer { padding-left: 24px; padding-right: 24px; }
+      .cover-body { padding-top: 48px; padding-bottom: 48px; }
+      .cover-logo { font-size: 1.25rem; }
+      .cover-tag,
+      .cover-pre,
+      .cover-to-label,
+      .cover-date,
+      .cover-scroll,
+      .section-num,
+      .num-label,
+      .tl-phase,
+      .tl-duration,
+      .cta-tag,
+      .cta-from-label {
+        letter-spacing: 0.18em;
+        line-height: 1.5;
+      }
+      .cover-title { font-size: clamp(2.75rem, 16vw, 4.4rem); }
+      .cover-sub { margin-bottom: 36px; }
+      .cover-to-role,
+      .cta-from-detail {
+        letter-spacing: 0.06em;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+      }
       .opp-grid, .sin-layout { grid-template-columns: 1fr; gap: 40px; }
+      .opp-insight { padding: 32px 24px; }
       .prop-cards { grid-template-columns: 1fr; }
+      .prop-card { padding: 32px 24px; }
+      .prop-card-badge { letter-spacing: 0.18em; line-height: 1.4; }
       .nums-grid { grid-template-columns: 1fr 1fr; }
+      .num-box { padding: 32px 18px; }
       .cover-accent { display: none; }
       .sin-visual { height: 280px; }
+      .sin-point { gap: 14px; }
+      .sin-point-icon { width: 34px; height: 34px; }
+      .mod-table,
+      .mod-table thead,
+      .mod-table tbody,
+      .mod-table tr,
+      .mod-table th,
+      .mod-table td {
+        display: block;
+        width: 100%;
+      }
+      .mod-table thead { display: none; }
+      .mod-table tr {
+        background: var(--cream);
+        border: 1px solid var(--light);
+        margin-bottom: 14px;
+      }
+      .mod-table td {
+        border-bottom: 1px solid var(--light);
+        padding: 14px 16px;
+      }
+      .mod-table td:last-child { border-bottom: 0; }
+      .mod-table td::before {
+        color: var(--smoke);
+        display: block;
+        font-size: 0.55rem;
+        letter-spacing: 0.18em;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+      }
+      .mod-table td:nth-child(1)::before { content: 'Concepto'; }
+      .mod-table td:nth-child(2)::before { content: 'Detalle'; }
+      .mod-table td:nth-child(3)::before { content: 'Costo estimado'; }
+      .mod-total { background: var(--ink) !important; }
+      .modelo > div.reveal {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+      }
+      .modelo > div.reveal p[style*="2.5rem"] {
+        font-size: clamp(2rem, 12vw, 2.5rem) !important;
+        line-height: 1 !important;
+      }
+      .tl-items { padding-left: 22px; }
+      .tl-items::before { left: 7px; }
+      .tl-item { padding-left: 24px; }
+      .tl-dot { left: -22px; }
+      .cta-section { padding: 80px 24px; }
+      .cta-title { font-size: clamp(2.35rem, 14vw, 4rem); }
+      .cta-sub br { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .section { padding: 52px 20px; }
+      .cover-header,
+      .cover-body,
+      .cover-footer { padding-left: 20px; padding-right: 20px; }
+      .cover-title { font-size: clamp(2.45rem, 17vw, 3.6rem); }
+      .section-title { font-size: clamp(2rem, 12vw, 3rem); margin-bottom: 34px; }
+      .opp-text p,
+      .opp-insight p,
+      .prop-intro { font-size: 1.05rem; }
+      .nums-grid { grid-template-columns: 1fr; }
+      .building { width: min(200px, calc(100vw - 80px)); }
+      .floor-label { letter-spacing: 0.12em; }
     }
 
